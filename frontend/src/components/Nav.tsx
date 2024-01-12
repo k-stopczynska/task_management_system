@@ -10,12 +10,9 @@ const Nav = () => {
   return (
 		<nav className='flex flex-col items-center justify-center border-primary-200 border-2 rounded-lg'>
 			<ul className='flex flex-col items-center justify-center list-none gap-4'>
-				{navItems.map((item) => (
-					<NavItem
-						title={item.title}
-						icon={item.icon}
-						alt={item.alt}
-						url={item.url}
+              {navItems.map((item) => (
+                  <NavItem
+                      {...item}
 					/>
 				))}
 			</ul>

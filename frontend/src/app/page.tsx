@@ -1,9 +1,10 @@
-import Image from 'next/image'
+import Image from 'next/image';
+import Header from '@/components/Header';
 
 export default function Home() {
   return (
-    <main >
-        <h1>task management system</h1>
-    </main>
-  )
+		<main className='p-4'>
+			<Header />
+		</main>
+  );
 }
